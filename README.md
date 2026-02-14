@@ -1,5 +1,5 @@
 # Database_Practice
-##Table: Products
+## Table: Products
 | Column        | Type          | Description       |
 | ------------- | ------------- | ----------------- |
 | ProductID     | INT (PK)      | Auto-increment ID |
@@ -8,8 +8,8 @@
 | Price         | DECIMAL(10,2) | Product price     |
 | StockQuantity | INT           | Available stock   |
 
-##Table Commands (DDL)
-`
+## Table Commands (DDL)
+```sql
 CREATE TABLE Products (
     ProductID INT AUTO_INCREMENT PRIMARY KEY,
     ProductName VARCHAR(100),
@@ -17,43 +17,36 @@ CREATE TABLE Products (
     Price DECIMAL(10,2),
     StockQuantity INT
 );
-`
-##View tables
-`
+```
+## View tables
+```sql
 SHOW TABLES;
-`
+```
 
-##View structure
-`
+## View structure
+```sql
 DESCRIBE Products;
-`
+```
 ##CRUD Operations
-###INSERT multiple
-`
+### INSERT multiple
+```sql
 INSERT INTO Products VALUES
 (NULL,'Mouse','Electronics',25,50),
 (NULL,'Keyboard','Electronics',45,30);
-`
+```
 
-###SELECT
-`SELECT * FROM Products;
-  `
-
-
-
-
-
-
-
-## Example SQL Query
-
-Get all expensive products:
-
+### SELECT
 ```sql
-SELECT ProductName, Price
-FROM Products
-WHERE Price > 500
-ORDER BY Price DESC;
+SELECT * FROM Products;
+```
+
+
+
+
+
+
+
+
 
 
 
