@@ -45,6 +45,15 @@ INSERT INTO Products VALUES
 
 
 
+## Example SQL Query
+
+Get all expensive products:
+
+```sql
+SELECT ProductName, Price
+FROM Products
+WHERE Price > 500
+ORDER BY Price DESC;
 
 
 
